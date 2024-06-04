@@ -4,9 +4,9 @@
 
 ## Credits
 
-This package is a direct fork from [NinpunTaruksha](https://github.com/nipunTharuksha/laravel-pdfmerger) work to add S3 Compatibility on [Webklex](https://github.com/Webklex/laravel-pdfmerger) PdfMerger Package
+This package is a fork from [NinpunTaruksha](https://github.com/nipunTharuksha/laravel-pdfmerger) work to add S3 Compatibility on [Webklex](https://github.com/Webklex/laravel-pdfmerger) PdfMerger Package.
 
-I just made it available for personal use on the packagist.
+S3 compatibility is enhanced through the use of temp files instead of temp urls. 
 
 ## Install
 
