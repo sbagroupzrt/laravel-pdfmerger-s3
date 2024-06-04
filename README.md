@@ -1,4 +1,4 @@
-# Laravel PDFMerger
+# Laravel PDFMerger with S3 Support
 
 [![Software License][ico-license]](LICENSE.md)
 
