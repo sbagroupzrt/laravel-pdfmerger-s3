@@ -1,5 +1,5 @@
 {
-    "name": "webklex/laravel-pdfmerger",
+    "name": "got-daijobu/laravel-pdfmerger-s3",
     "type": "library",
     "description": "Webklex Package with S3 support - thanks to nipunTharuksha",
     "keywords": [
