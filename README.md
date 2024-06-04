@@ -15,7 +15,7 @@ I just made it available for personal use on the packagist.
 Via Composer
 
 ``` bash
-$ composer require webklex/laravel-pdfmerger
+$ composer require gotDaijobu/laravel-pdfmerger
 ```
 
 ## Setup
