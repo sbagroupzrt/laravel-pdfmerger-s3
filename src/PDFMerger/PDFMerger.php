@@ -2,9 +2,9 @@
 /*
 * File:     PDFMerger.php
 * Category: PDFMerger
-* Author:   M. Goldenbaum
+* Author:   M. Goldenbaum / N. Tarushka / Daijobu.ai
 * Created:  01.12.16 20:18
-* Updated:  -
+* Updated:  04.06.2024 14.:27
 *
 * Description:
 *  -
@@ -179,12 +179,13 @@ class PDFMerger {
                 throw new \Exception("Invalid format for pages: '$pages'");
             }
 
-            $temporaryUrl = Storage::disk('s3')->temporaryUrl($filePath, Carbon::now()->addMinutes($tempURLMinutes));
+            $filename = Str::random(40).'.pdf';
+            Storage::disk('local')->put('merger/temp/'.$filename, Storage::disk('s3')->get($filePath));
 
             $this->aFiles->push([
-                'name'  => $temporaryUrl,
+                'name'  => storage_path()."/".Storage::path('merger/temp/'.$filename),
                 'pages' => $pages,
-                'orientation' => $orientation
+                'orientation' => $orientation,
             ]);
         } else {
             throw new \Exception("Could not locate PDF on '$filePath'");
@@ -231,6 +232,17 @@ class PDFMerger {
      */
     public function merge($orientation = null) {
         $this->doMerge($orientation, false);
+        $this->cleanTemp();
+    }
+
+    /**
+     * Clean Temp Directory after Merger
+     * @return void
+     */
+
+    protected function cleanTemp(){
+        $fs = new Filesystem();
+        $fs->cleanDirectory(storage_path(Storage::path('merger/temp/')));
     }
 
     /**
