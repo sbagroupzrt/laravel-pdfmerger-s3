@@ -1,7 +1,7 @@
 {
     "name": "webklex/laravel-pdfmerger",
     "type": "library",
-    "description": "Generic PDF merger for Laravel",
+    "description": "Webklex Package with S3 support - thanks to nipunTharuksha",
     "keywords": [
         "webklex",
         "laravel",
@@ -9,13 +9,16 @@
         "merger",
         "pdfmerger"
     ],
-    "homepage": "https://github.com/webklex/pdfmerger",
+    "homepage": "https://github.com/nipunTharuksha/laravel-pdfmerger",
     "license": "MIT",
     "authors": [
         {
             "name": "Malte Goldenbaum",
             "email": "github@webklex.com",
             "role": "Developer"
+        },
+        {
+            "name": "Nipun Tharuksha",
         }
     ],
     "require": {
