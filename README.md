@@ -2,9 +2,13 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
 [![Total Downloads][ico-downloads]][link-downloads]
 
+## Credits
+
+This package is a direct fork from [NinpunTaruksha](https://github.com/nipunTharuksha/laravel-pdfmerger) work to add S3 Compatibility on [Webklex](https://github.com/Webklex/laravel-pdfmerger) PdfMerger Package
+
+I just made it available for personal use on the packagist.
 
 ## Install
 
