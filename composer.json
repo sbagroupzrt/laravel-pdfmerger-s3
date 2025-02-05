@@ -1,5 +1,5 @@
 {
-    "name": "got-daijobu/laravel-pdfmerger-s3",
+    "name": "treb00/laravel-pdfmerger-s3",
     "type": "library",
     "description": "Webklex Package with S3 support - thanks to nipunTharuksha",
     "keywords": [
@@ -9,7 +9,7 @@
         "merger",
         "pdfmerger"
     ],
-    "homepage": "https://github.com/nipunTharuksha/laravel-pdfmerger",
+    "homepage": "https://github.com/treb00/laravel-pdfmerger",
     "license": "MIT",
     "authors": [
         {
