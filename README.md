@@ -13,7 +13,7 @@ S3 compatibility is enhanced through the use of temp files instead of temp urls.
 Via Composer
 
 ``` bash
-$ composer require got-daijobu/laravel-pdfmerger-s3
+$ composer require treb00/laravel-pdfmerger-s3
 ```
 
 ## Setup
