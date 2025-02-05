@@ -183,7 +183,7 @@ class PDFMerger {
             Storage::disk('local')->put('merger/temp/'.$filename, Storage::disk('s3')->get($filePath));
 
             $this->aFiles->push([
-                'name'  => storage_path()."/".Storage::path('merger/temp/'.$filename),
+                'name'  => Storage::disk('local')->path('merger/temp/'.$filename),
                 'pages' => $pages,
                 'orientation' => $orientation,
             ]);
