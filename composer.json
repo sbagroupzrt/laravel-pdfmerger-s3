@@ -9,7 +9,7 @@
         "merger",
         "pdfmerger"
     ],
-    "homepage": "https://github.com/sbagroupzrt/laravel-pdfmerger",
+    "homepage": "https://github.com/sbagroupzrt/laravel-pdfmerger-s3",
     "license": "MIT",
     "authors": [
         {
